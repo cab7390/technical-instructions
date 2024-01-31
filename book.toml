@@ -1,0 +1,10 @@
+[book]
+authors = [
+    "Christian Bowman",
+    "David Araujo",
+    "Dino Nicastro",
+    "Utomobong Ekanem"
+]
+language = "en"
+multilingual = false
+src = "src"
