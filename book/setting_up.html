@@ -174,23 +174,27 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="setting-up-visual-studio-code-vscode-for-python-development"><a class="header" href="#setting-up-visual-studio-code-vscode-for-python-development">Setting Up Visual Studio Code (VSCode) for Python Development</a></h2>
+<p>Visual Studio Code (VSCode) is a versatile and user-friendly code editor. In this section, we'll walk you through downloading VSCode and configuring it for Python development.</p>
 <h3 id="downloading-and-installing-vscode"><a class="header" href="#downloading-and-installing-vscode">Downloading and Installing VSCode</a></h3>
-<ul>
+<ol>
 <li>Visit the <a href="https://code.visualstudio.com/download">VSCode download page</a>.</li>
-<li>Download and run the installer for your OS.</li>
-</ul>
+<li>Select the appropriate version for your operating system (Windows, macOS, or Linux) and download the installer.</li>
+<li>Run the downloaded file and follow the installation prompts.</li>
+</ol>
 <h3 id="installing-the-python-extension-for-vscode"><a class="header" href="#installing-the-python-extension-for-vscode">Installing the Python Extension for VSCode</a></h3>
-<ul>
-<li>Open VSCode.</li>
-<li>Go to Extensions (<code>Ctrl+Shift+X</code>/<code>Cmd+Shift+X</code>).</li>
-<li>Search for and install the Python extension by Microsoft.</li>
-</ul>
+<ol>
+<li>Once VSCode is installed, launch it.</li>
+<li>To enhance VSCode for Python development, you'll need to install the Python extension. Click on the Extensions icon (or press <code>Ctrl+Shift+X</code>/<code>Cmd+Shift+X</code>).</li>
+<li>In the Extensions search bar, type "Python" and look for the Python extension by Microsoft.</li>
+<li>Click on the "Install" button to add this extension to VSCode.</li>
+</ol>
 <h3 id="configuring-vscode-for-python"><a class="header" href="#configuring-vscode-for-python">Configuring VSCode for Python</a></h3>
-<ul>
-<li>Python extension should automatically configure upon installation.</li>
-<li>Customize settings via Command Palette (<code>Ctrl+Shift+P</code>/<code>Cmd+Shift+P</code>).</li>
-</ul>
-<p><img src="images/20240126091925.png" alt="Screenshot" /></p>
+<ol>
+<li>The Python extension automatically configures most settings for optimal Python development.</li>
+<li>If you wish to customize further, open the Command Palette (<code>Ctrl+Shift+P</code>/<code>Cmd+Shift+P</code>) and explore Python-specific settings.</li>
+</ol>
+<p><img src="images/20240126091925.png" alt="VSCode Python Extension" /></p>
+<p><em>Image Description: Screenshot of the VSCode interface, showing the Extensions screen with the Python extension by Microsoft open and ready for installation.</em></p>
 
                     </main>
 
@@ -221,22 +225,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

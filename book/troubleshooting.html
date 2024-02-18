@@ -174,11 +174,13 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<p>Encountering issues is a normal part of the learning process. This section addresses common problems you might face while setting up your Python environment and how to resolve them.</p>
 <ul>
-<li><strong>Python Not Found</strong>: Verify Python is added to PATH during installation.</li>
-<li><strong>VSCode Not Recognizing Python</strong>: Reinstall the Python extension.</li>
-<li><strong>Python File Not Running</strong>: Check for correct file extension and saved changes.</li>
+<li><strong>Python Not Found</strong>: If the terminal shows a 'Python not found' error after installation, confirm that Python was added to the PATH during installation. Reinstalling Python with the correct settings may be necessary.</li>
+<li><strong>VSCode Not Recognizing Python</strong>: If VSCode does not recognize Python, try reinstalling the Python extension. Ensure that Python is properly installed on your system.</li>
+<li><strong>Python File Not Running</strong>: If your <code>.py</code> file isn't running, check that it's saved with the correct extension and that all changes are saved. Verify that you are running the script in the right directory in the terminal.</li>
 </ul>
+<p>Remember, encountering and solving problems is an essential part of developing your problem-solving skills in programming!</p>
 
                     </main>
 
@@ -209,22 +211,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

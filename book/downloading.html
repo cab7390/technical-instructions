@@ -174,24 +174,34 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="downloading-and-installing-python"><a class="header" href="#downloading-and-installing-python">Downloading and Installing Python</a></h2>
+<p>Setting up Python on your computer is the first step in your programming journey. This section guides you through downloading Python from its official website and ensuring it's correctly installed on your system.</p>
 <h3 id="visit-the-python-website"><a class="header" href="#visit-the-python-website">Visit the Python Website</a></h3>
-<ul>
-<li>Go to <a href="https://www.python.org/downloads/">Python's official website</a>.</li>
-<li>Click the download button for the latest Python version.</li>
-</ul>
+<ol>
+<li>Navigate to <a href="https://www.python.org/downloads/">Python's official website</a>.</li>
+<li>Look for the download button for the latest Python version and click it. This ensures you have the most up-to-date features and security patches.</li>
+</ol>
 <h3 id="installation-process"><a class="header" href="#installation-process">Installation Process</a></h3>
+<ol>
+<li>Locate and open the downloaded Python installer file.
 <ul>
-<li>Open the downloaded installer.</li>
-<li><strong>Windows Users</strong>: Check <strong>Add Python to PATH</strong> before clicking &quot;Install Now&quot;.</li>
-<li><strong>macOS/Linux Users</strong>: Follow the on-screen instructions.</li>
+<li><strong>Windows Users</strong>: A crucial step is to check the <strong>Add Python to PATH</strong> option before proceeding. This makes Python accessible from the command line.</li>
+<li><strong>macOS/Linux Users</strong>: Follow the instructions presented by the installer. They typically involve a series of simple clicks.</li>
 </ul>
+</li>
+</ol>
 <h3 id="verifying-installation"><a class="header" href="#verifying-installation">Verifying Installation</a></h3>
+<ol>
+<li>To ensure Python is correctly installed, open your system's command line interface:
 <ul>
-<li>Open the terminal or command prompt.</li>
-<li>Type <code>python --version</code> and press Enter.</li>
-<li>Confirm that the Python version number is displayed.</li>
+<li><strong>Windows</strong>: Use the Command Prompt or PowerShell.</li>
+<li><strong>macOS/Linux</strong>: Use the Terminal application.</li>
 </ul>
-<p><img src="images/20240126091803.png" alt="Screenshot" /></p>
+</li>
+<li>Type <code>python --version</code> and press Enter. This command checks the installed Python version.</li>
+<li>If the installation is successful, you'll see the Python version number displayed, like <code>Python 3.11.5</code>.</li>
+</ol>
+<p><img src="images/20240126091803.png" alt="Python Version Verification" /></p>
+<p><em>Image Description: Screenshot showing the terminal window with the successful output of <code>Python 3.11.5</code> after typing <code>python --version</code>.</em></p>
 
                     </main>
 
@@ -222,22 +232,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

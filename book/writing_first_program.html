@@ -174,30 +174,36 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="writing-your-first-python-program-in-vscode"><a class="header" href="#writing-your-first-python-program-in-vscode">Writing Your First Python Program in VSCode</a></h2>
+<p>Creating and running a Python program is an exciting first step in coding. In this section, you'll write and execute the classic "Hello World" program in Python using VSCode.</p>
 <h3 id="creating-a-new-python-file"><a class="header" href="#creating-a-new-python-file">Creating a New Python File</a></h3>
-<ul>
-<li>In VSCode, go to File &gt; New File (<code>Ctrl+N</code>/<code>Cmd+N</code>).</li>
-<li>Save the file with a <code>.py</code> extension, e.g., <code>hello.py</code>.</li>
-</ul>
+<ol>
+<li>In VSCode, start a new file by selecting File &gt; New File from the menu (or using the shortcut <code>Ctrl+N</code>/<code>Cmd+N</code>).</li>
+<li>Save this file with a <code>.py</code> extension, such as <code>hello.py</code>, indicating it's a Python script.</li>
+</ol>
 <h3 id="writing-the-hello-world-program"><a class="header" href="#writing-the-hello-world-program">Writing the Hello World Program</a></h3>
-<p>Type the following code in your <code>hello.py</code> file:</p>
-<pre><code class="language-python">print(&quot;Hello, World!&quot;)
+<ol>
+<li>
+<p>In your new <code>hello.py</code> file, enter the following Python code:</p>
+<pre><code>print("Hello, World!")
 </code></pre>
-<ul>
-<li>Save your file (<code>Ctrl+S</code>/<code>Cmd+S</code>).</li>
-</ul>
+</li>
+<li>
+<p>After typing the code, save your script (shortcut <code>Ctrl+S</code>/<code>Cmd+S</code>).</p>
+</li>
+</ol>
 <h3 id="running-the-program"><a class="header" href="#running-the-program">Running the Program</a></h3>
+<ol>
+<li>Open the integrated terminal in VSCode to run your script:
 <ul>
-<li>Open the integrated terminal in VSCode:
-<ul>
-<li>You can open it by going to Terminal &gt; New Terminal from the top menu.</li>
+<li>Do this by selecting Terminal &gt; New Terminal from the top menu.</li>
 <li>Alternatively, use the shortcut <code>Ctrl+` (Windows/Linux)</code> or <code>Cmd+` (macOS)</code>.</li>
 </ul>
 </li>
 <li>In the terminal, type <code>python hello.py</code> and press Enter.</li>
-<li>Look for the output &quot;Hello, World!&quot; in the terminal.</li>
-</ul>
-<p><img src="images/20240126092842.png" alt="Screenshot" /></p>
+<li>If everything is set up correctly, you'll see "Hello, World!" printed in the terminal, signaling that your program has run successfully.</li>
+</ol>
+<p><img src="images/20240126092842.png" alt="Running Hello World in VSCode" /></p>
+<p><em>Image Description: Screenshot showing the VSCode window with the 'hello.py' file open, containing the 'print("Hello, World!")' code, and the integrated terminal displaying the output of the executed program.</em></p>
 
                     </main>
 
@@ -228,22 +234,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

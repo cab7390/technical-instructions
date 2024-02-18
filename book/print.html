@@ -174,78 +174,126 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
-<p>This guide provides detailed instructions for beginners on setting up a Python development environment. It covers downloading and installing Python, configuring Visual Studio Code (VSCode) for Python development, and writing a basic &quot;Hello World&quot; program.</p>
+                        <h2 id="introduction-to-python-development-environment-setup-guide"><a class="header" href="#introduction-to-python-development-environment-setup-guide">Introduction to Python Development Environment Setup Guide</a></h2>
+<p>Welcome to the Python Development Environment Setup Guide! This guide is structured as an mdBook, a modern approach to creating detailed documentation that is both accessible and easy to navigate. Our objective is to provide a comprehensive, user-friendly manual that simplifies the process of setting up a Python development environment for beginners.</p>
+<h3 id="why-this-guide-is-essential"><a class="header" href="#why-this-guide-is-essential">Why This Guide is Essential</a></h3>
+<p>Python is a versatile and popular programming language, suitable for a range of applications from web development to data science. However, for newcomers, the initial setup of a Python development environment can be daunting. This guide demystifies the process, ensuring that even those with no prior programming experience can confidently take their first steps in Python.</p>
+<h3 id="what-this-guide-covers"><a class="header" href="#what-this-guide-covers">What This Guide Covers</a></h3>
+<p>We delve into:</p>
+<ul>
+<li>Downloading and Installing Python: A straightforward walkthrough to get Python installed on your system.</li>
+<li>Setting Up Visual Studio Code (VSCode): Steps to install and configure VSCode, a powerful and user-friendly code editor, for Python development.</li>
+<li>Writing Your First Python Program: A simple tutorial to write and execute your first Python script, the classic "Hello World" program.</li>
+</ul>
+<h3 id="designed-for-beginners"><a class="header" href="#designed-for-beginners">Designed for Beginners</a></h3>
+<p>Aligned with the principles outlined in our coursework, we've ensured that the guide is:</p>
+<ul>
+<li>Purposeful: Every section and graphic is included to serve a clear, instructional purpose.</li>
+<li>Simple and Clear: We've avoided technical jargon and complex explanations to keep the guide beginner-friendly.</li>
+<li>Well-Structured: Organized into distinct sections for easy navigation and comprehension.</li>
+<li>Complemented with Graphics: Screenshots and diagrams are included to visually aid the instructions, placed appropriately near the relevant text.</li>
+</ul>
+<h3 id="collaborative-effort"><a class="header" href="#collaborative-effort">Collaborative Effort</a></h3>
+<p>This guide is the result of a collaborative effort, adhering to effective project management and teamwork strategies. We've divided the tasks equitably, ensuring regular communication and adapting our approach as needed for the best outcomes.</p>
+<p>We hope this guide serves as a valuable resource for anyone embarking on their Python programming journey. Let's get started!</p>
+<h3 id="feedback-and-revisions"><a class="header" href="#feedback-and-revisions">Feedback and Revisions</a></h3>
+<p>We value your feedback. Please let us know if there are areas we can improve or clarify. This guide is a living document and will evolve based on user input and further usability testing.</p>
+<p><img src="images/Python-Logo.png" alt="Python Logo" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="downloading-and-installing-python"><a class="header" href="#downloading-and-installing-python">Downloading and Installing Python</a></h2>
+<p>Setting up Python on your computer is the first step in your programming journey. This section guides you through downloading Python from its official website and ensuring it's correctly installed on your system.</p>
 <h3 id="visit-the-python-website"><a class="header" href="#visit-the-python-website">Visit the Python Website</a></h3>
-<ul>
-<li>Go to <a href="https://www.python.org/downloads/">Python's official website</a>.</li>
-<li>Click the download button for the latest Python version.</li>
-</ul>
+<ol>
+<li>Navigate to <a href="https://www.python.org/downloads/">Python's official website</a>.</li>
+<li>Look for the download button for the latest Python version and click it. This ensures you have the most up-to-date features and security patches.</li>
+</ol>
 <h3 id="installation-process"><a class="header" href="#installation-process">Installation Process</a></h3>
+<ol>
+<li>Locate and open the downloaded Python installer file.
 <ul>
-<li>Open the downloaded installer.</li>
-<li><strong>Windows Users</strong>: Check <strong>Add Python to PATH</strong> before clicking &quot;Install Now&quot;.</li>
-<li><strong>macOS/Linux Users</strong>: Follow the on-screen instructions.</li>
+<li><strong>Windows Users</strong>: A crucial step is to check the <strong>Add Python to PATH</strong> option before proceeding. This makes Python accessible from the command line.</li>
+<li><strong>macOS/Linux Users</strong>: Follow the instructions presented by the installer. They typically involve a series of simple clicks.</li>
 </ul>
+</li>
+</ol>
 <h3 id="verifying-installation"><a class="header" href="#verifying-installation">Verifying Installation</a></h3>
+<ol>
+<li>To ensure Python is correctly installed, open your system's command line interface:
 <ul>
-<li>Open the terminal or command prompt.</li>
-<li>Type <code>python --version</code> and press Enter.</li>
-<li>Confirm that the Python version number is displayed.</li>
+<li><strong>Windows</strong>: Use the Command Prompt or PowerShell.</li>
+<li><strong>macOS/Linux</strong>: Use the Terminal application.</li>
 </ul>
-<p><img src="images/20240126091803.png" alt="Screenshot" /></p>
+</li>
+<li>Type <code>python --version</code> and press Enter. This command checks the installed Python version.</li>
+<li>If the installation is successful, you'll see the Python version number displayed, like <code>Python 3.11.5</code>.</li>
+</ol>
+<p><img src="images/20240126091803.png" alt="Python Version Verification" /></p>
+<p><em>Image Description: Screenshot showing the terminal window with the successful output of <code>Python 3.11.5</code> after typing <code>python --version</code>.</em></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="setting-up-visual-studio-code-vscode-for-python-development"><a class="header" href="#setting-up-visual-studio-code-vscode-for-python-development">Setting Up Visual Studio Code (VSCode) for Python Development</a></h2>
+<p>Visual Studio Code (VSCode) is a versatile and user-friendly code editor. In this section, we'll walk you through downloading VSCode and configuring it for Python development.</p>
 <h3 id="downloading-and-installing-vscode"><a class="header" href="#downloading-and-installing-vscode">Downloading and Installing VSCode</a></h3>
-<ul>
+<ol>
 <li>Visit the <a href="https://code.visualstudio.com/download">VSCode download page</a>.</li>
-<li>Download and run the installer for your OS.</li>
-</ul>
+<li>Select the appropriate version for your operating system (Windows, macOS, or Linux) and download the installer.</li>
+<li>Run the downloaded file and follow the installation prompts.</li>
+</ol>
 <h3 id="installing-the-python-extension-for-vscode"><a class="header" href="#installing-the-python-extension-for-vscode">Installing the Python Extension for VSCode</a></h3>
-<ul>
-<li>Open VSCode.</li>
-<li>Go to Extensions (<code>Ctrl+Shift+X</code>/<code>Cmd+Shift+X</code>).</li>
-<li>Search for and install the Python extension by Microsoft.</li>
-</ul>
+<ol>
+<li>Once VSCode is installed, launch it.</li>
+<li>To enhance VSCode for Python development, you'll need to install the Python extension. Click on the Extensions icon (or press <code>Ctrl+Shift+X</code>/<code>Cmd+Shift+X</code>).</li>
+<li>In the Extensions search bar, type "Python" and look for the Python extension by Microsoft.</li>
+<li>Click on the "Install" button to add this extension to VSCode.</li>
+</ol>
 <h3 id="configuring-vscode-for-python"><a class="header" href="#configuring-vscode-for-python">Configuring VSCode for Python</a></h3>
-<ul>
-<li>Python extension should automatically configure upon installation.</li>
-<li>Customize settings via Command Palette (<code>Ctrl+Shift+P</code>/<code>Cmd+Shift+P</code>).</li>
-</ul>
-<p><img src="images/20240126091925.png" alt="Screenshot" /></p>
+<ol>
+<li>The Python extension automatically configures most settings for optimal Python development.</li>
+<li>If you wish to customize further, open the Command Palette (<code>Ctrl+Shift+P</code>/<code>Cmd+Shift+P</code>) and explore Python-specific settings.</li>
+</ol>
+<p><img src="images/20240126091925.png" alt="VSCode Python Extension" /></p>
+<p><em>Image Description: Screenshot of the VSCode interface, showing the Extensions screen with the Python extension by Microsoft open and ready for installation.</em></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="writing-your-first-python-program-in-vscode"><a class="header" href="#writing-your-first-python-program-in-vscode">Writing Your First Python Program in VSCode</a></h2>
+<p>Creating and running a Python program is an exciting first step in coding. In this section, you'll write and execute the classic "Hello World" program in Python using VSCode.</p>
 <h3 id="creating-a-new-python-file"><a class="header" href="#creating-a-new-python-file">Creating a New Python File</a></h3>
-<ul>
-<li>In VSCode, go to File &gt; New File (<code>Ctrl+N</code>/<code>Cmd+N</code>).</li>
-<li>Save the file with a <code>.py</code> extension, e.g., <code>hello.py</code>.</li>
-</ul>
+<ol>
+<li>In VSCode, start a new file by selecting File &gt; New File from the menu (or using the shortcut <code>Ctrl+N</code>/<code>Cmd+N</code>).</li>
+<li>Save this file with a <code>.py</code> extension, such as <code>hello.py</code>, indicating it's a Python script.</li>
+</ol>
 <h3 id="writing-the-hello-world-program"><a class="header" href="#writing-the-hello-world-program">Writing the Hello World Program</a></h3>
-<p>Type the following code in your <code>hello.py</code> file:</p>
-<pre><code class="language-python">print(&quot;Hello, World!&quot;)
+<ol>
+<li>
+<p>In your new <code>hello.py</code> file, enter the following Python code:</p>
+<pre><code>print("Hello, World!")
 </code></pre>
-<ul>
-<li>Save your file (<code>Ctrl+S</code>/<code>Cmd+S</code>).</li>
-</ul>
+</li>
+<li>
+<p>After typing the code, save your script (shortcut <code>Ctrl+S</code>/<code>Cmd+S</code>).</p>
+</li>
+</ol>
 <h3 id="running-the-program"><a class="header" href="#running-the-program">Running the Program</a></h3>
+<ol>
+<li>Open the integrated terminal in VSCode to run your script:
 <ul>
-<li>Open the integrated terminal in VSCode:
-<ul>
-<li>You can open it by going to Terminal &gt; New Terminal from the top menu.</li>
+<li>Do this by selecting Terminal &gt; New Terminal from the top menu.</li>
 <li>Alternatively, use the shortcut <code>Ctrl+` (Windows/Linux)</code> or <code>Cmd+` (macOS)</code>.</li>
 </ul>
 </li>
 <li>In the terminal, type <code>python hello.py</code> and press Enter.</li>
-<li>Look for the output &quot;Hello, World!&quot; in the terminal.</li>
-</ul>
-<p><img src="images/20240126092842.png" alt="Screenshot" /></p>
+<li>If everything is set up correctly, you'll see "Hello, World!" printed in the terminal, signaling that your program has run successfully.</li>
+</ol>
+<p><img src="images/20240126092842.png" alt="Running Hello World in VSCode" /></p>
+<p><em>Image Description: Screenshot showing the VSCode window with the 'hello.py' file open, containing the 'print("Hello, World!")' code, and the integrated terminal displaying the output of the executed program.</em></p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<p>Encountering issues is a normal part of the learning process. This section addresses common problems you might face while setting up your Python environment and how to resolve them.</p>
 <ul>
-<li><strong>Python Not Found</strong>: Verify Python is added to PATH during installation.</li>
-<li><strong>VSCode Not Recognizing Python</strong>: Reinstall the Python extension.</li>
-<li><strong>Python File Not Running</strong>: Check for correct file extension and saved changes.</li>
+<li><strong>Python Not Found</strong>: If the terminal shows a 'Python not found' error after installation, confirm that Python was added to the PATH during installation. Reinstalling Python with the correct settings may be necessary.</li>
+<li><strong>VSCode Not Recognizing Python</strong>: If VSCode does not recognize Python, try reinstalling the Python extension. Ensure that Python is properly installed on your system.</li>
+<li><strong>Python File Not Running</strong>: If your <code>.py</code> file isn't running, check that it's saved with the correct extension and that all changes are saved. Verify that you are running the script in the right directory in the terminal.</li>
 </ul>
+<p>Remember, encountering and solving problems is an essential part of developing your problem-solving skills in programming!</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
-<p>Congratulations on setting up your Python development environment in VSCode and writing your first Python program! These foundational skills mark the beginning of your programming journey.</p>
+<p>Congratulations on successfully setting up your Python development environment in VSCode and writing your first Python program! These foundational skills are just the beginning of your programming journey.</p>
+<p>This guide, designed as an mdBook, aims to provide a clear and user-friendly introduction to Python setup. By breaking down each step and complementing instructions with relevant graphics, we hope to make the learning process smoother and more engaging.</p>
+<p>As you continue to explore Python and VSCode, remember that practice is key to mastering programming. Don't hesitate to refer back to this guide whenever you need a refresher on the basics.</p>
+<p>Happy coding!</p>
 
                     </main>
 
@@ -264,22 +312,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
